@@ -1,0 +1,20 @@
+<!--
+  <form action="/sessions" method="post">
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email">
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="password">
+  <button type="submit">Submit</button>
+</form>
+-->
+<%= form_tag('/sessions', method: 'post') do %>
+
+<%= label_tag :email %>
+<%= text_field_tag :email %>
+
+<%= label_tag :password %>
+<%= text_field_tag :password %>
+
+<%= submit_tag "Submit" %>
+
+<% end %>
